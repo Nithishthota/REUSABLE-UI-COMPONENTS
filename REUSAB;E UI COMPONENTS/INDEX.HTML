@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern UI Components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f2f4f8;
+      color: #333;
+      padding: 30px;
+    }
+
+    h2 {
+      margin: 40px 0 20px;
+      font-size: 24px;
+      color: #222;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #0d6efd;
+      padding: 15px 25px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .navbar nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      margin: 10px 10px 10px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: #0d6efd;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #094bcc;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #0d6efd;
+      border: 2px solid #0d6efd;
+    }
+
+    .btn-secondary:hover {
+      background: #e7f1ff;
+    }
+
+    /* Badge */
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 12px;
+      background: #28a745;
+      color: white;
+      border-radius: 20px;
+      margin: 5px;
+    }
+
+    .badge.red {
+      background: #dc3545;
+    }
+
+    .badge.blue {
+      background: #0d6efd;
+    }
+
+    /* Cards */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      width: 280px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Form */
+    .form-box {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">MyUI</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Buttons -->
+  <h2>Buttons</h2>
+  <button class="btn btn-primary">Primary Button</button>
+  <button class="btn btn-secondary">Secondary Button</button>
+
+  <!-- Badges -->
+  <h2>Badges</h2>
+  <span class="badge">New</span>
+  <span class="badge red">Alert</span>
+  <span class="badge blue">Info</span>
+
+  <!-- Cards -->
+  <h2>Cards</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>This is a flexible card component. You can use it anywhere.</p>
+    </div>
+    <div class="card">
+      <h3>Another Card</h3>
+      <p>Cards can hold text, images, buttons, or any custom content.</p>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <h2>Form</h2>
+  <div class="form-box">
+    <form>
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com">
+      </div>
+      <div class="form-group">
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="4" placeholder="Your message..."></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
